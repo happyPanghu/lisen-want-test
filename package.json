@@ -1,0 +1,23 @@
+{
+  "name": "lisen-want-test",
+  "version": "1.0.10",
+  "description": "测试一下",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "test",
+    "go": "rollup ./lib/index.js -o index.js -f umd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.lagou.com:mds-easy-fed/easy-web.git"
+  },
+  "author": "李森",
+  "license": "ISC",
+  "files": [
+    "lib",
+    "index.js"
+  ],
+  "dependencies": {
+    "rollup": "^1.10.0"
+  }
+}
