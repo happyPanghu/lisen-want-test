@@ -3,6 +3,18 @@
     factory();
 }(function () { 'use strict';
 
+    function aTest() {
+        console.log(1);
+    }
+
+    function bTest() {
+        console.log(2);
+    }
+
+    function cTest() {
+        console.log(3);
+    }
+
     var SA_SERVER = 'https://sa.lagou.com/collect.gif';
     var _navigator = navigator,
         userAgent = _navigator.userAgent,
@@ -75,7 +87,7 @@
         _lgUserSimpleInfo.lagou_company_id = _company.lgId;
     }
 
-    module.exports.lgSa = {
+    const lgSa = {
 
         defaultBrowserParam: function() {
             return {
@@ -142,5 +154,17 @@
         }
     };
     window.lgSa = lgSa;
+
+    module.exports = {
+        aTest,
+        bTest,
+        cTest,
+        lgSa
+    };
+    //
+    // module.exports = require("./test/a.js");
+    // module.exports = require("./test/b.js");
+    // module.exports = require("./test/c.js");
+    // module.exports = require("./test/d.js");
 
 }));
